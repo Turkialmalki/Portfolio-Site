@@ -1,0 +1,170 @@
+main,
+header,
+footer {
+   margin: 10px;
+}
+
+header {
+    display:grid;
+    grid-template-columns: auto auto;
+    height: 110px;
+    margin-bottom: 50px;
+    border-bottom: 5px solid #2d3c49;
+}
+.logo-image {
+    text-align: left;
+    padding: 10px 0;
+    
+}
+
+.logo-image img {
+    width: 90px;
+    height: 90px;
+}
+
+.header-text {
+    font-weight: 210;
+    text-align: right;
+}
+
+.header-text h1 {
+    font-weight: 220;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.header-text p {
+    margin-top: 0;
+}
+  
+
+.Container {
+    display: grid;
+    margin-bottom: 15px;
+}
+
+.Container-img {
+    margin: 0;
+}
+
+.Container-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px 15px;
+}
+
+.main-content h2 {
+    grid-column: 1 / 4;
+    color: #7d97ad;
+    font-weight: 400;
+}
+
+.portfolio-section {
+    text-align: center;
+    margin-bottom: 25px;
+    border: 1px solid #777;
+    
+
+}
+
+.portfolio-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio-link a {
+    border: 1px solid #2d3c49;
+    padding: 5px;
+    border-radius: 2px;
+    text-align: center;
+    
+}
+
+.portfolio-link a:hover,
+.portfolio-link a:active {
+    text-decoration: none;
+    background-color: rgba(3, 137, 253, 0.1);
+}
+
+.img-attribution {
+    font-size: 0.8em;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #2d3c49;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    border-bottom: 3px solid #2d3c49;
+        
+
+}
+
+footer p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+footer p:nth-child(2) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media screen and (min-width: 850px) {
+    main,
+    header,
+    footer {
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logo-image img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .header-text h1 {
+        font-size: 1.7em;
+    }
+
+    .main-content {
+        grid-template-columns: 75%;
+        justify-content: space-evenly;
+    }
+
+    .main-content h2 {
+        grid-column: auto;
+        text-align: center;
+    }
+
+    .portfolio-section h3 {
+        margin-top: 5px;
+    }
+
+    .portfolio-link {
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    .portfolio-link a {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+}
